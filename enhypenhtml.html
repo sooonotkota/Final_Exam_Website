@@ -8,7 +8,7 @@
     <title>Enhypen</title>
 </head>
 
-<body>
+<body class="dark">
     <img src="images/BorderDayOne.png" alt="Enhypen 1st Album cover">
     <img src="images/BorderCarnival.jpg" alt="Enhypen 2nd Album cover">
     <img src="images/DimensionDilemma.png" alt="Enhypen 3rd Album cover">
@@ -18,9 +18,10 @@
     <img src="images/OrangeBlood.jpg" alt="Enhypen 7th Album cover">
     <img src="images/RomanceUntold.jpg" alt="Enhypen 8th Album cover">
     <img src="images/RomanceUntoldDaydream.jpg" alt="Enhypen 9th Album cover">
+
     <div class="container">
         <h1>Enhypen</h1>
-        <h1><strong>Debut:</strong>2020.11.30 </h1>
+        <h1><strong>Debut:</strong> 2020.11.30</h1>
         <button class="theme-button">Change theme</button>
         <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202207/ENHYPEN-Future-perfect.jpg?VersionId=jZsDkDjNBZJzUl0hmj2tMkY.QpLP9Oln&amp;size=690:388"
             alt="ENHYPEN" class="Epic">
@@ -28,21 +29,34 @@
         <h2>Members</h2>
         <div class="members">
             <ul>
-                <h4>Sunoo</h4>
-                <li>Vocalist</li>
-                <h4>Sunghoon</h4>
-                <li>Vocalist, Dancer</li>
-                <h4>Ni-ki</h4>
-                <li>Dancer, Rapper, Maknae</li>
-                <h4>Jay</h4>
-                <li>Vocalist, Dancer, Rapper</li>
-                <h4>Jake</h4>
-                <li>Vocalist, Dancer</li>
-                <h4>Jungwon</h4>
-                <li>Dancer, Rapper</li>
-                <h4>Heeseung</h4>
-                <li>Center, Vocalist</li>
-
+                <li>
+                    <h4>Sunoo</h4>
+                    Vocalist
+                </li>
+                <li>
+                    <h4>Sunghoon</h4>
+                    Vocalist, Dancer
+                </li>
+                <li>
+                    <h4>Ni-ki</h4>
+                    Dancer, Rapper, Maknae
+                </li>
+                <li>
+                    <h4>Jay</h4>
+                    Vocalist, Dancer, Rapper
+                </li>
+                <li>
+                    <h4>Jake</h4>
+                    Vocalist, Dancer
+                </li>
+                <li>
+                    <h4>Jungwon</h4>
+                    Dancer, Rapper
+                </li>
+                <li>
+                    <h4>Heeseung</h4>
+                    Center, Vocalist
+                </li>
             </ul>
             <h3>Discography</h3>
             <p><strong>Border:</strong> Day One - Carnival</p>
@@ -53,6 +67,22 @@
             <p><strong>Romance:</strong> Untold - Daydream</p>
         </div>
         <div class="backhome">Wanna learn the other dances? <a href="final_page_1.html">Click back to home</a></div>
+    </div>
+
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+
+            if (body.classList.contains("dark")) {
+                body.classList.remove("dark");
+            } else {
+                body.classList.add("dark");
+            }
+        }
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
 </body>
 
 </html>

@@ -1,24 +1,46 @@
 body {
-    background-color: #f9f7fe;
+    background-color: #f6c7c3;
     font-family: sans-serif;
 }
 
-body {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+.dark {
+    background: #98afe5;
+    color: white;
 }
 
-body img {
-    transform: translateX(-20px);
-    /* Move images to the left outside the container */
-    transition: transform 0.3s;
+button {
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #98afe5;
+    background: white;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: all 150ms ease-in-out;
 }
 
-body img:hover {
-    transform: translateX(0);
-    /* Return images to normal position on hover */
+button:hover {
+    background: #98afe5;
+    cursor: pointer;
+}
+
+.dark button:hover {
+    background: #f6c7c3;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.dark .container {
+    background: #fff;
+    color: #000;
 }
 
 .container {
@@ -36,18 +58,6 @@ h1 {
     font-size: 36px;
 }
 
-.theme-button {
-    font-size: 10px;
-    background: black;
-    color: white;
-    padding: 5 8px;
-}
-
-.theme-button:hover {
-    color: white;
-    background: black;
-}
-
 img {
     max-width: 300px;
 }
@@ -61,7 +71,6 @@ img {
     filter: contrast(80%);
     transform: scale(1.1);
 }
-
 h2 {
     text-align: center;
     font-family: sans-serif;

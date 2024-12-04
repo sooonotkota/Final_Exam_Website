@@ -8,21 +8,22 @@
     <title>Tomorrow by Together</title>
 </head>
 
-<body>
+<body class="dark">
     <img src="images/TheDreamChapterStar.jpg" alt="Tomorrow by Together 1st Album cover">
     <img src="images/TheDreamChapterMagic.jpg" alt="Tomorrow by Together 2nd Album cover">
     <img src="images/TheDreamChapterEternity.jpg" alt="Tomorrow by Together 3rd Album cover">
     <img src="images/BlueHour.jpg" alt="Tomorrow by Together 4th Album cover">
-    <img src=" images/TheChaosChapterFreeze.jpg" alt="Tomorrow by Together 5th Album cover">
+    <img src="images/TheChaosChapterFreeze.jpg" alt="Tomorrow by Together 5th Album cover">
     <img src="images/TheChaosChapterFightOrEscape.jpg" alt="Tomorrow by Together 6th Album cover">
     <img src="images/ThursdaysChild.png" alt="Tomorrow by Together 7th Album cover">
     <img src="images/TheNameChapterTemptation.jpg" alt="Tomorrow by Together 8th Album cover">
     <img src="images/TheNameChapterFreefall.jpg" alt="Tomorrow by Together 9th Album cover">
-    <img src="images/3Tomorrow.jpg" alt="Tomorrow by Together 10th Album cover"">
-    <img src=" images/TheStarChapterSanctuary.jpg" alt="Tomorrow by Together 11th Album cover">
+    <img src="images/3Tomorrow.jpg" alt="Tomorrow by Together 10th Album cover">
+    <img src="images/TheStarChapterSanctuary.jpg" alt="Tomorrow by Together 11th Album cover">
+
     <div class="container">
         <h1>Tomorrow By Together</h1>
-        <h1><strong>Debut: </strong>2019.02.11 </h1>
+        <h1><strong>Debut: </strong>2019.02.11</h1>
         <button class="theme-button">Change theme</button>
         <img src="https://i.ytimg.com/vi/VfnpetaEXUE/maxresdefault.jpg" alt="TXT" class="TXTimg">
         <h2>Watch their Sugar Rush Ride dance practice!</h2>
@@ -40,7 +41,6 @@
                     <li>Visual</li>
                     <h4>HueningKai</h4>
                     <li>Maknae</li>
-
                 </ul>
                 <h3>Discography</h3>
                 <p><strong>The Dream Chapter:</strong> Star - Magic - Eternity</p>
@@ -51,6 +51,22 @@
             </div>
         </article>
         <div class="backhome">Wanna learn the other dances? <a href="final_page_1.html">Click back to home</a></div>
+    </div>
+
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+
+            if (body.classList.contains("dark")) {
+                body.classList.remove("dark");
+            } else {
+                body.classList.add("dark");
+            }
+        }
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
 </body>
 
 </html>
