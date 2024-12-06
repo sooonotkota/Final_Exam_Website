@@ -1,5 +1,11 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: #f6c7c3;
+    color: white;
+    margin: 0;
     font-family: sans-serif;
 }
 
@@ -29,27 +35,60 @@ button:hover {
     cursor: pointer;
 }
 
-.container {
-    max-width: 600px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 10px;
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 50px;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.unforgiven,
+.fearless,
+.antifragile,
+.PerfectNight,
+.easy,
+.crazy {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: all 150ms ease-in-out;
+    transform-origin: center;
+    margin-top: 30px;
+}
+
+.unforgiven:hover,
+.fearless:hover,
+.antifragile:hover,
+.PerfectNight:hover,
+.easy:hover,
+.crazy:hover {
+    filter: contrast(80%);
+    transform: scale(1.1);
+}
+
+.container {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 600px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 120px 20px 120px;
+}
+
 
 .dark .container {
     background: #fff;
     color: #000;
-}
-
-.container {
-    max-width: 600px;
-    margin: 60px auto;
-    background: white;
-    padding: 30px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 10px;
 }
 
 h1 {
@@ -71,6 +110,7 @@ img {
     filter: contrast(80%);
     transform: scale(1.1);
 }
+
 h2 {
     text-align: center;
     font-family: sans-serif;

@@ -9,16 +9,16 @@
 </head>
 
 <body class="dark">
-    <img src="images/Fearless.png" alt="Le Sserafim 1st Album cover" class="Fearless">
-    <img src="images/Antifragile.png" alt="Le Sserafim 2nd Album cover" class="Antifragile">
-    <img src="images/Unforgiven.jpg" alt="Le Sserafim 3rd Album cover" class="Unforgiven">
-    <img src="images/PerfectNight.jpg" alt="Le Sserafim 4th Album cover" class="PerfectNight">
-    <img src="images/Easy.png" alt="Le Sserafim 5th Album cover" class="Easy">
-    <img src="images/Crazy.jpg" alt="Le Sserafim 6th Album cover" class="Crazy">
-
+    <div class="wrapper">
+        <div class="column">
+            <img src="Fearless.png" class="fearless">
+            <img src="Antifragile.png" class="antifragile">
+            <img src="Unforgiven.jpg" class="unforgiven">
+        </div>
+    </div>
     <div class="container">
-        <h1>Le Sserafim</h1>
-        <h1><strong>Debut: </strong>2022.05.21</h1>
+        <h1>Le Sserafim</br>
+        <strong>Debut: </strong>2022.05.21</h1>
         <button class="theme-button">Change theme</button>
         <img src="https://i.ytimg.com/vi/8S9rHj7gTsA/maxresdefault.jpg" alt="Le Sserafim" class="lspic">
         <h2>Watch their Unforgiven dance practice!</h2>
@@ -43,7 +43,13 @@
         </article>
         <div class="backhome">Wanna learn the other dances? <a href="final_page_1.html">Click back to home</a></div>
     </div>
-
+    <div class="wrapper">
+        <div class="column">
+            <img src="PerfectNight.jpg" class="PerfectNight">
+            <img src="Easy.png" class="easy">
+            <img src="Crazy.jpg" class="crazy">
+        </div>
+    </div>
     <script>
         function changeTheme() {
             let body = document.querySelector("body");
